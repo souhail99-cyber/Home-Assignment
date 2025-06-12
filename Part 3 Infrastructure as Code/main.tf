@@ -21,6 +21,10 @@ resource "aws_instance" "web" {
   }
 }
 
+output "instance_public_ip" {
+  value       = aws_instance.web.public_ip
+  description = "Public IP address of the EC2 instance"
+}
 resource "aws_security_group" "simple-web_sg" {
   name        = "simple-web-sg"
   description = "Allow HTTP and SSH"
