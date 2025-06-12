@@ -14,9 +14,3 @@ Basic setup to deploy a web app using Docker, GitHub Actions, and Terraform on A
 - AWS account (free tier)
 - Terraform installed
 
-## Docker
-
-```bash
-make build   # builds the image
-make run     # runs the container
-make push    # pushes to Docker Hub
