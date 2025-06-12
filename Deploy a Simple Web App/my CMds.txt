@@ -1,0 +1,6 @@
+cd '/home/fitnessman/Desktop/Deploy a Simple Web App
+
+
+sudo docker build -t simple-web .
+
+sudo docker run -d -p 8080:80 simple-web
