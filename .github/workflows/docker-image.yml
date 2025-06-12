@@ -21,7 +21,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/simple-web-app .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/simple-web-app "./Deploy a Simple Web App"
 
       - name: Push Docker image
         run: docker push ${{ secrets.DOCKER_USERNAME }}/simple-web-app
